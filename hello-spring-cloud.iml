@@ -6,6 +6,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/hello-spring-cloud-web-admin-ribbon/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/hello-spring-cloud-web-admin-ribbon/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/hello-spring-cloud-web-admin-feign/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hello-spring-cloud-web-admin-feign/src/main/resources" type="java-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
