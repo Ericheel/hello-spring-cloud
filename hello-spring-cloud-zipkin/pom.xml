@@ -10,18 +10,14 @@
         <relativePath>../hello-spring-cloud-dependencies/pom.xml</relativePath>
     </parent>
 
-    <artifactId>hello-spring-cloud-config</artifactId>
+    <artifactId>hello-spring-cloud-zipkin</artifactId>
     <packaging>jar</packaging>
 
-    <name>hello-spring-cloud-config</name>
+    <name>hello-spring-cloud-zipkin</name>
     <url>http://www.funtl.com</url>
     <inceptionYear>2018-Now</inceptionYear>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zipkin</artifactId>
-        </dependency>
         <!-- Spring Boot Begin -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -44,8 +40,19 @@
 
         <!-- Spring Cloud Begin -->
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
+            <groupId>io.zipkin.java</groupId>
+            <artifactId>zipkin</artifactId>
+            <version>${zipkin.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.zipkin.java</groupId>
+            <artifactId>zipkin-server</artifactId>
+            <version>${zipkin.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.zipkin.java</groupId>
+            <artifactId>zipkin-autoconfigure-ui</artifactId>
+            <version>${zipkin.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -60,7 +67,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.funtl.hello.spring.cloud.config.ConfigApplication</mainClass>
+                    <mainClass>com.funtl.hello.spring.cloud.zipkin.ZipKinApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>
